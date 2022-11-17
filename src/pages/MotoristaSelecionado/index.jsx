@@ -27,9 +27,9 @@ export default function MotoristaSelecionado(){
         <Container>
             <ImageBackground source={image} resizeMode="cover" style={styles.image}>
             <Header>
-                <Nome>Nome do usuario</Nome>
+                <Nome>Nome do usuário</Nome>
                 <TouchableOpacity onPress={() => setVisivel(true)}>
-                    <SimpleLineIcons name="options-vertical" size={24} color="white" />
+                    
                 </TouchableOpacity> 
             </Header>
 

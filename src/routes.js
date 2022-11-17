@@ -2,7 +2,9 @@ import React from "react";
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
 
+import Inicial from "./pages/Inicial";
 import Login from "./pages/Login";
+import LoginMotorista from "./pages/LoginMotorista";
 import Motorista from "./pages/Motorista";
 import Entrega from "./pages/Entrega";
 import MapaMotorista from "./pages/MapaMotorista";
@@ -23,6 +25,10 @@ import Publicar from "./pages/Publicar";
 import PerfilEmpresa from "./pages/PerfilEmpresa";
 import UpdateEmpresa from "./pages/UpdateEmpresa";
 import UpdateEntrega from "./pages/UpdateEntrega";
+import Cep from "./pages/Cep";
+import ANTT from "./pages/ANTT";
+import Pagamento from "./pages/Pagamento";
+
 
 const appStack = createStackNavigator();
 
@@ -32,7 +38,9 @@ export default function Routes(){
             <appStack.Navigator headerMode="none" screenOptions={{
                 cardStyle:{backgroundColor:'#f0f0f5'}
             }}>
+                <appStack.Screen name="Inicial" component={Inicial}/>
                 <appStack.Screen name="Login" component={Login}/>
+                <appStack.Screen name="LoginMotorista" component={LoginMotorista}/>
                 <appStack.Screen name="Empresa" component={Empresa}/>
                 <appStack.Screen name="EmpresaMotorista" component={EmpresaMotorista}/>
                 <appStack.Screen name="Motorista" component={Motorista}/>
@@ -53,6 +61,11 @@ export default function Routes(){
                 <appStack.Screen name="PerfilEmpresa" component={PerfilEmpresa}/>
                 <appStack.Screen name="UpdateEmpresa" component={UpdateEmpresa}/>
                 <appStack.Screen name="UpdateEntrega" component={UpdateEntrega}/>
+                <appStack.Screen name="Cep" component={Cep}/>
+                <appStack.Screen name="Pagamento" component={Pagamento}/>
+                <appStack.Screen name="ANTT" component={ANTT}/>
+            
+                 
 
             </appStack.Navigator>
         </NavigationContainer>

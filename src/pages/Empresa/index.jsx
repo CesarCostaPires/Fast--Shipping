@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState,useContext } from "react";
 import {ImageBackground,TextInput, Text, TouchableOpacity, View, StyleSheet, Image, FlatList, Modal} from 'react-native';
 import {useNavigation} from '@react-navigation/native'; 
 import { BotaoFlat, Container, Footer, Header, Icones, Nome, TextoFlat, TextoIcones, TextoIconeSelecionado, TextoTitulo, Titulo, ViewFlat1, Modalzinho } from "../Style";
@@ -6,11 +6,13 @@ import { Ionicons } from '@expo/vector-icons';
 import { AntDesign } from '@expo/vector-icons'; 
 import { FontAwesome } from '@expo/vector-icons';
 import { SimpleLineIcons } from '@expo/vector-icons'; 
+import { AuthContext } from "../contexts/auth";
 const image = { uri: "https://img.freepik.com/fotos-premium/a-textura-da-tela-preta-escura-para-a-imagem-do-design_99266-547.jpg?w=740" };
 //const image = { uri: "https://img.freepik.com/vetores-gratis/copie-o-fundo-digital-dos-circuitos-azuis-do-espaco_23-2148821699.jpg?w=740&t=st=1661290825~exp=1661291425~hmac=9be0803ee93e7a7f5088d25a319edcccaee85e2fc534c09c856b363c7228f643" };
-export default function Empresa(){
-    let[visivel, setVisivel] = useState(false);
 
+export default function Empresa(){
+    const{nome} = useContext(AuthContext)
+    let[visivel, setVisivel] = useState(false);
     const navigation = useNavigation(); 
 
     function goEntrega(){
@@ -66,9 +68,9 @@ export default function Empresa(){
         <Container>
             <ImageBackground source={image} resizeMode="cover" style={styles.image}>
             <Header>
-                <Nome>Nome do usuario</Nome>
+                <Nome> {nome}</Nome>
                 <TouchableOpacity onPress={() => setVisivel(true)}>
-                    <SimpleLineIcons name="options-vertical" size={24} color="white" />
+                    
                 </TouchableOpacity>
                 
             </Header>
@@ -90,7 +92,7 @@ export default function Empresa(){
 
             </Modal>
             <Titulo>
-                <TextoTitulo>Entregas publicadas</TextoTitulo>
+                <TextoTitulo>       Objetos postados</TextoTitulo>
             </Titulo>
             <ViewFlat1>
                 <FlatList 

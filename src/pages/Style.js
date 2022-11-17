@@ -8,6 +8,13 @@ export const Container = styled.View`
     background-color: #fff;
 
 `;
+export const Container1 = styled.View`
+    flex: 1;
+    justify-content:  center;
+    align-items: center;
+    background-color: #ffff;
+
+`;
 //---------->>>TELA LOGIN<<<----------------
 
 export const ContainerLogin = styled.View`
@@ -34,7 +41,7 @@ export const CaixaTexto = styled.TextInput`
 `;
 
 export const BotaoLogin = styled.TouchableOpacity`
-    background-color: #f5f5f5;
+    background-color: #135ced;
     padding: 10px;
     border-radius: 9px;
     width: 250px;
@@ -43,7 +50,7 @@ export const BotaoLogin = styled.TouchableOpacity`
 `;
 export const TextoBotaoLogin = styled.Text`
     text-align: center;
-    color: #135ced;
+    color: #FFFFFF;
     font-size: 18px;
 `;
 
@@ -52,8 +59,8 @@ export const ViewBotoes = styled.View`
     align-items: center;
 `;
 export const BotaoCriar = styled.TouchableOpacity`
-    background-color: #135ced;
-    padding: 10px;
+    background-color: transparent;
+    padding: 2px;
     border-radius: 9px;
     width: 130px;
     margin: 5px;
@@ -61,7 +68,7 @@ export const BotaoCriar = styled.TouchableOpacity`
 `;
 export const TextoCriar = styled.Text`
     color: white;
-    font-size: 18px;
+    font-size: 15px;
     text-align: center;
 `;
 
@@ -84,10 +91,35 @@ export const Buisness = styled.View`
     background-color: #135ced;
     margin: 1px;
 `;
-export const TextoStart = styled.Text`
-    font-size: 30px;
+export const TextoStart1 = styled.Text`
+    font-size: 25px;
     color: #f5f5f5;
     text-align: center;
+    margin-top: -240px;
+`;
+export const TextoStart = styled.Text`
+    font-size: 20px;
+    color: #f5f5f5;
+    text-align: center;
+    
+`;
+export const TextoStart2 = styled.Text`
+    font-size: 20px;
+    color: #f5f5f5;
+    text-align: center;
+    
+`;
+export const TextoStart4 = styled.Text`
+    font-size: 40px;
+    color: #f5f5f5;
+    text-align: center;
+    margin-top: -240px;
+`;
+export const TextoStart5 = styled.Text`
+    font-size: 1px;
+    color: #f5f5f5;
+    text-align: center;
+    margin-top: -240px;
 `;
 //-------------->>>>FIM TELA START<<<<-----------
 
@@ -99,6 +131,7 @@ export const Botao = styled.TouchableOpacity`
     margin: 5px;
     align-self: center;
 `;
+
 
 export const TextoBotao = styled.Text`
     text-align: center;
@@ -113,10 +146,33 @@ export const Header = styled.View`
     width: 360px;
     height: 100px;
 `;
+
+export const Header1 = styled.View`
+    justify-content:  center;
+    align-items: center;
+    flex-direction: row;
+   
+    width: 350px;
+    height: 100px;
+`;
+
 export const Nome = styled.Text`
     color: #fff;
     font-size: 26px;
     fontWeight: bold;
+`;
+export const Nome2 = styled.Text`
+    color: #000000;
+    font-size: 26px;
+    fontWeight: bold;
+    align-items: center;
+`;
+export const Nome1 = styled.Text`
+    color: #000000;
+    font-size: 16px;
+    fontWeight: bold;
+    align-items: center;
+    
 `;
 
 export const Modalzinho = styled.View`
@@ -274,7 +330,7 @@ export const ViewDadosMotorista = styled.View`
 `;
 
 export const TextoDadosMotorista = styled.Text`
-    font-size: 17px;
+    font-size: 13px;
     color: #FFFFFF;
     margin: 5px;
 `;
@@ -310,7 +366,7 @@ export const CampoGrande = styled.TextInput`
     border-radius: 10px;
     background-color: #f5fbff;
     margin: 10px;
-    width: 80%;
+    width: 97%;
     color: #135ced;
     font-size: 15px;
     padding-left: 10px;
@@ -319,29 +375,41 @@ export const CampoGrande = styled.TextInput`
 `;
 
 export const CampoPequeno = styled.TextInput`
-    height: 50px;
-    border-radius: 10px;
-    background-color: #f5fbff;
-    margin: 10px;
-    width: 30%;
-    color: #135ced;
-    font-size: 15px;
-    padding-left: 10px;
-    border-width: 1px;
-    border-color: #135ced;
+height: 50px;
+border-radius: 10px;
+background-color: #f5fbff;
+margin: 10px;
+width: 97%;
+color: #135ced;
+font-size: 15px;
+padding-left: 10px;
+border-width: 1px;
+border-color: #135ced;
 `;
 
 export const CampoMedio = styled.TextInput`
-    height: 50px;
-    border-radius: 10px;
-    background-color: #f5fbff;
-    margin: 10px;
-    width: 60%;
-    color: #135ced;
-    font-size: 15px;
-    padding-left: 10px;
-    border-width: 1px;
-    border-color: #135ced;
+height: 50px;
+border-radius: 10px;
+background-color: #f5fbff;
+margin: 10px;
+width: 97%;
+color: #135ced;
+font-size: 15px;
+padding-left: 10px;
+border-width: 1px;
+border-color: #135ced;
+`;
+export const CampoPequeno1 = styled.TextInput`
+height: 50px;
+border-radius: 10px;
+background-color: #f5fbff;
+margin: 10px;
+width: 62%;
+color: #135ced;
+font-size: 15px;
+padding-left: 10px;
+border-width: 1px;
+border-color: #135ced;
 `;
 //--------->>>TELAS DE CADASTRO<<<-----------
 export const ContainerCadastro = styled.View`
@@ -360,7 +428,7 @@ export const BotaoCep = styled.TouchableOpacity`
     background-color: #135ced;
     padding: 10px;
     border-radius: 9px;
-    width: 150px;
+    width: 110px;
     margin: 5px;
     align-self: center;
 `;

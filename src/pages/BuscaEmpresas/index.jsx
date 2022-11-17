@@ -62,13 +62,13 @@ export default function BuscaEmpresas(){
         <Container>
             <ImageBackground source={image} resizeMode="cover" style={styles.image}>
             <Header>
-                <Nome>Nome do usuario</Nome>
+                <Nome>Nome do usuário</Nome>
                 <TouchableOpacity onPress={() => setVisivel(true)}>
-                    <SimpleLineIcons name="options-vertical" size={24} color="white" />
+                    
                 </TouchableOpacity> 
             </Header>
             <Titulo>
-                <TextoTitulo>Empresas da sua area</TextoTitulo>
+                <TextoTitulo>   Empresas da sua área</TextoTitulo>
             </Titulo>
             <ViewFlat>
                 <FlatList 

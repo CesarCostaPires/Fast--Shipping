@@ -30,7 +30,7 @@ export default function PerfilEmpresa(){
             <Header>
                 <Nome>Nome do Usuario</Nome>
                 <TouchableOpacity onPress={() => setVisivel(true)}>
-                    <SimpleLineIcons name="options-vertical" size={24} color="white" />
+                   
                 </TouchableOpacity> 
             </Header>
             <ScrollView showsVerticalScrollIndicator={false}>

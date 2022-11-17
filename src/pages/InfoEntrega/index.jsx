@@ -39,23 +39,12 @@ export default function InfoEntrega(){
             <Header>
                 <Nome>Nome do usuario</Nome>
                 <TouchableOpacity onPress={() => setVisivel(true)}>
-                    <SimpleLineIcons name="options-vertical" size={24} color="white" />
+                    
                 </TouchableOpacity> 
             </Header>
             <Modal animationType='slide' transparent={true} visible={visivel}>
                 <Modalzinho>
-                    <TouchableOpacity>
-                        <Text>seila</Text>
-                    </TouchableOpacity>
-                    <TouchableOpacity>
-                        <Text>seila</Text>
-                    </TouchableOpacity>
-                    <TouchableOpacity>
-                        <Text>seila</Text>
-                    </TouchableOpacity>
-                    <TouchableOpacity>
-                        <Text>Sair</Text>
-                    </TouchableOpacity>
+                    
                 </Modalzinho>
             </Modal>
             <ScrollView showsVerticalScrollIndicator={false}>
